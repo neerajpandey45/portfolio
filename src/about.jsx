@@ -71,6 +71,7 @@ const About = () => {
         <div className={classes.skill}>
           <h3>
           Technical skills:
+          <br />
               Html,Css,JavaScript,
                React.js,Python,Sql
             <a href={resume} download="neeraj_pandey_resume">

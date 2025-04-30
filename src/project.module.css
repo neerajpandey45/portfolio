@@ -15,20 +15,40 @@
   width: 100%;
 }
 .cards h5 {
-  height: 250px;
-  width: 450px;
+  min-height: 250px; /* base height, can grow */
+  width: 100%; 
+  max-width: 450px;
   background-color: #0089ba;
   display: flex;
-  border-radius: 20px;
-  padding-left: 20px;
-  padding-top: 5px;
-  color: white;
-  overflow-y: auto;
   flex-direction: column;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
   font-size: 25px;
+  overflow: visible;/* allow height to grow */
+  word-wrap: break-word; /* wrap long text */
 }
+@media (min-width: 600px) and (max-width: 1024px) {
+  .cards h5 {
+    max-width: 90%;
+    font-size: 22px;
+    background-color:#0089ba;
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .cards h5 {
+    max-width: 100%;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color:#0089ba;
+  }
+}
+
 .back i {
   font-size: 100px;
   color: rgba(215, 200, 200, 0.871);
  
 }
+

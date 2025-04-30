@@ -1,6 +1,6 @@
 .main {
+  min-width: 100vw;
   min-height: 100vh;
-  min-width: 100vh;
   background-color: #051937;
   border-radius: 5px;
   padding-top: 46px;
@@ -13,7 +13,6 @@
   left: 0;
   width: 100%;
   height: 50px;
-  z-index: 1000;
   background-color: rgba(0, 0, 0);
   color: white;
 }
@@ -46,8 +45,8 @@ hr {
   padding: 20px;
 }
 .about h3 {
-  height: 250px;
-  width: 450px;
+   height: 275px;
+  width: 450px; 
   background-color: rgba(0, 0, 0, 0.425);
   display: flex;
   border-radius: 20px;
@@ -56,12 +55,13 @@ hr {
   color: white;
   overflow-y: auto;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 .navbar ul {
   display: block;
   height: 15vh;
   width: 10vw;
-  background-color:rgba(0, 0, 0, 0.594);
+  background-color: rgba(0, 0, 0, 0.594);
   border-radius: 20px;
   padding-top: 10px;
   position: absolute;
@@ -69,11 +69,11 @@ hr {
   list-style: none;
 }
 
-.skill h3{
+.skill h3 {
   font-size: 20px;
   font-weight: 500;
 }
-.skill a{
+.skill a {
   width: 140px;
   display: flex;
   margin-top: 130px;
@@ -85,7 +85,79 @@ hr {
   text-decoration: none;
 }
 .navbar ul li {
-   display: flex;
-   align-items: center;
-   gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* for mobile*/
+@media (max-width: 576px) and (orientation: portrait) {
+  .about h3 {
+    width: 80vw;
+    height: auto;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 15px;
   }
+  .profile img {
+    width: 150px;
+    height: 150px;
+    margin-right: 31px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    padding: 10px 0;
+  }
+  .navbar h3 {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  .navbar ul {
+    width: 32vw;
+    height: auto;
+    background-color: rgba(245, 12, 12);
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+  .skill a {
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+/* landscape mobile*/
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Small laptops / Landscape tablets */
+  .about h3 {
+    width: 60vw;
+    height: auto;
+    font-size: 22px;
+    background-color: green;
+   
+  }
+  .profile img {
+    width: 250px;
+    height: 250px;
+  }
+  .navbar h3{
+    padding: 8px;
+  }
+  .navbar ul {
+    width: 22vw;
+    height: auto;
+    right: 15px;
+    background-color:red;
+  }
+  .skill a {
+    margin-left: 250px;
+    margin-top: 70px;
+  }}
