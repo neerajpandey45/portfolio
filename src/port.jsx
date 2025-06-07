@@ -263,7 +263,7 @@ const Port = () => {
         <div className="container mx-auto px-4">
           <a
             href={resume}
-            download="neeraj_pandey_resume"
+            download="neeraj_pandey_resume.pdf"
             className="font-bold text-blue-800"
             style={{ fontSize: "20px" }}
           >
