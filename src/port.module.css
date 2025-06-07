@@ -1,0 +1,46 @@
+.main {
+  width: 100%;
+  height: 100%;
+}
+.nav nav ul li a{
+ text-decoration: none;
+ color:white;
+}
+.typing {
+  display:inline-block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  white-space:nowrap;
+  overflow: hidden;
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  width: 0;
+  color:rgba(255, 0, 0, 0.742);
+    animation: typing 4s steps(24) 1s infinite, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 26ch ; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: rgba(255, 255, 255, 0.75); }
+}
+
+@media (max-width: 576px) {
+  .nav nav {
+   
+    width: 100%;
+    padding: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
