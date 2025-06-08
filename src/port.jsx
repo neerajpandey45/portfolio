@@ -5,7 +5,7 @@ import linkedin from "./assets/linkedin.png";
 import github from "./assets/github.png";
 import gmail from "./assets/gmail.png";
 import whatsapp from "./assets/whatsapp.png";
-import resume from "./assets/resume.pdf";
+import resume from "./assets/resume.pdf"
 const Port = () => {
   return (
     <div className={classes.main}>
