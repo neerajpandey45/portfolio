@@ -6,6 +6,16 @@ import github from "./assets/github.png";
 import gmail from "./assets/gmail.png";
 import whatsapp from "./assets/whatsapp.png";
 import resume from "./assets/resume.pdf";
+import jobimages from "./assets/jobimages.jpg";
+import portfolio from "./assets/portfolio.jpg";
+import html from "./assets/html.png";
+import css from "./assets/css.png";
+import react from "./assets/react.svg";
+import js from "./assets/js.png";
+import nextjs from "./assets/nextjs.jpeg";
+import bootstrap from "./assets/bootstrap.png";
+import tailwind from "./assets/tailwind.png";
+import python from "./assets/python.png";
 const Port = () => {
   return (
     <div className={classes.main}>
@@ -13,7 +23,6 @@ const Port = () => {
         <nav className="w-100 bg-gray-800  top-0 p-3 text-white">
           <div className="container mx-auto flex justify-between items-center">
             <h5>Neeraj Pandey</h5>
-
             <ul className="flex space-x-6">
               <li>
                 <a href="#about">About</a>
@@ -55,7 +64,7 @@ const Port = () => {
                 </div>
               </span>
             </div>
-            <div className="col-12 col-md-6 d-flex  justify-content-center justify-content-md-center">
+            <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-center">
               <img
                 src={photo}
                 alt="Profile"
@@ -85,7 +94,7 @@ const Port = () => {
           </div>
         </div>
       </section>
-      <section id="education" className=" bg-gray-800 text-white py-5">
+      <section id="education" className=" bg-gray-800 text-white ">
         <div className="container mx-auto px-4 ">
           <h2>Education:</h2>
           <div className="flex flex-col lg:flex-row gap-6 py-3">
@@ -97,42 +106,65 @@ const Port = () => {
             <div className="flex-1 pl-5 border">
               <h5>Post Graduation:</h5>
               <span>Master of Computer Application(Mca)</span>
-
               <p>Galgotias University Greater Noida Up.</p>
             </div>
           </div>
         </div>
       </section>
-      <section id="skills" className="py-5 bg-gray-800 text-white">
+      <section id="skills" className="py-2 bg-gray-800 text-white">
         <div className="container py-3">
           <h2 className="text-white">Skills:</h2>
           <div className={classes.card}>
             <h4>Technical Skills:</h4>
             <div className="row text-center text-break">
-              <div className="col-6 col-sm-3 mb-2">
-                <p className="border py-2">Html</p>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Html</p>
+                  <img src={html} />
+                </div>
               </div>
-              <div className="col-6 col-sm-3 mb-2">
-                <p className="border px-3 py-2">Css</p>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Css</p>
+                  <img src={css} />
+                </div>
               </div>
-              <div className="col-6 col-sm-3 mb-2">
-                <p className="border px-3 py-2">Javascript</p>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Javascript</p>
+                  <img src={js} />
+                </div>
               </div>
-              <div className="col-6 col-sm-3 mb-2">
-                <p className="border px-3 py-2">React.js</p>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">React.js</p>
+                  <img src={react} />
+                </div>
               </div>
-              <div className="col-6 col-sm-3 mb-2">
-                <p className="border px-3 py-2">Bootstrap</p>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Next.js</p>
+                  <img src={nextjs} />
+                </div>
               </div>
-              <div className="col-6 col-sm-3 mb-2">
-                <p className="border px-3 py-2">Tailwind</p>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Bootstrap</p>
+                  <img src={bootstrap} />
+                </div>
+              </div>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Tailwind</p>
+                  <img src={tailwind} />
+                </div>
               </div>
 
-              <div className="col-6 col-sm-3 mb-2">
-                <p className="border px-3 py-2">Python</p>
-              </div>
-              <div className="col-6 col-sm-3 mb-2">
-                <p className="border px-3 py-2">Sql</p>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Python</p>
+                  <img src={python} />
+                </div>
               </div>
             </div>
           </div>
@@ -141,31 +173,74 @@ const Port = () => {
       <section id="projects" className="py-4 bg-gray-800">
         <div className="container mx-auto">
           <div className="row">
-            <h2 className="text-danger">Projects</h2>
+            <div className="text-amber-500">
+              <h1>Projects</h1>
+            </div>
             <div className="flex flex-col justify-center items-center text-white">
-              <h5>Job Portal Web Application</h5>
-              <div className="border rounded-3 space-y-3 px-2 p-3 mb-2">
-                <li>
-                  Built with Next.js, React.js, Tailwind CSS, and Bootstrap.
-                </li>
-                <li>
-                  Implemented JWT authentication and role-based dashboards for
-                  recruiters and users.
-                </li>
-                <li>
-                  Developed features like job posting, resume uploads, and
-                  profile management.
-                </li>
-                <li>
-                  Used MongoDB for backend integration and React Hooks for state
-                  management.
-                </li>
-                <div className="flex justify-end mr-5">
+              <h1>Job Portal Web Application</h1>
+              <div className="border rounded-4 space-y-3 px-2 p-3 mb-2">
+                <div className="flex justify-center">
+                  <img
+                    src={jobimages}
+                    style={{
+                      width: "700px",
+                      height: "400px",
+                      borderRadius: "20px",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+                <ul className="list-disc list-outside m-0 space-y-2 text-2xl">
+                  <li>
+                    Built with Next.js, React.js, Tailwind CSS, and Bootstrap.
+                  </li>
+                  <li>
+                    Implemented JWT authentication and role-based dashboards for
+                    recruiters and users.
+                  </li>
+                  <li>
+                    Developed features like job posting, resume uploads, and
+                    profile management.
+                  </li>
+                  <li>
+                    Used MongoDB for backend integration and React Hooks for
+                    state management.
+                  </li>
+                </ul>
+
+                <div className="flex justify-end mr-5 pt-1">
                   <button className="btn btn-primary btn-sm">Veiw</button>
                 </div>
               </div>
+              <h1>Portfolio</h1>
+              <div className="border rounded-4 space-y-3 px-2 p-3 mb-2">
+                <div className="flex justify-center">
+                  <img
+                    src={portfolio}
+                    style={{
+                      width: "700px",
+                      height: "200px",
+                      borderRadius: "20px",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+                <ul className="list-disc list-outside m-0 space-y-2 text-2xl">
+                  <li>
+                    Built a personal portfolio using HTML, CSS, JavaScript,
+                    React.js, and Bootstrap.
+                  </li>
+                  <li>
+                    Showcased projects and skills through a responsive,
+                    interactive user interface.
+                  </li>
+                  <li>
+                    Continuously maintained to reflect technical growth and
+                    learning progress.
+                  </li>
+                </ul>
+              </div>
             </div>
-         
           </div>
         </div>
       </section>

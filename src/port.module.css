@@ -44,3 +44,16 @@
     gap: 5px;
   }
 }
+.card img{
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+}
+.card div div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 30px;
+}
