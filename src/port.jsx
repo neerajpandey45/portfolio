@@ -5,7 +5,7 @@ import linkedin from "./assets/linkedin.png";
 import github from "./assets/github.png";
 import gmail from "./assets/gmail.png";
 import whatsapp from "./assets/whatsapp.png";
-import resume from "./assets/resume.pdf"
+import resume from "./assets/resume.pdf";
 const Port = () => {
   return (
     <div className={classes.main}>
@@ -140,48 +140,32 @@ const Port = () => {
       </section>
       <section id="projects" className="py-4 bg-gray-800">
         <div className="container mx-auto">
-          <div className="row  text-white">
-            <h2>Projects</h2>
-            <div className="col-12 col-sm-12 col-md-6">
-              <h5>Learning Management System(Lms)</h5>
-              <div className="border px-2 p-3 mb-2">
+          <div className="row">
+            <h2 className="text-danger">Projects</h2>
+            <div className="flex flex-col justify-center items-center text-white">
+              <h5>Job Portal Web Application</h5>
+              <div className="border rounded-3 space-y-3 px-2 p-3 mb-2">
                 <li>
-                  Built responsive LMS using React with Bootstrap and Tailwind
-                  CSS for sleek design.
+                  Built with Next.js, React.js, Tailwind CSS, and Bootstrap.
                 </li>
                 <li>
-                  Added interactive features with JavaScript for smooth user
-                  experience.
+                  Implemented JWT authentication and role-based dashboards for
+                  recruiters and users.
                 </li>
                 <li>
-                  Developed an exam module to handle quizzes, timers, and
-                  scoring efficiently.
+                  Developed features like job posting, resume uploads, and
+                  profile management.
                 </li>
-                <div className="flex justify-center pt-3">
-                  <button className="btn btn-primary btn-lg">Veiw</button>
+                <li>
+                  Used MongoDB for backend integration and React Hooks for state
+                  management.
+                </li>
+                <div className="flex justify-end mr-5">
+                  <button className="btn btn-primary btn-sm">Veiw</button>
                 </div>
               </div>
             </div>
-            <div className="col-12 col-sm-12 col-md-6">
-              <h5>Portfolio</h5>
-              <div className="border px-2 p-3 mb-2">
-                <li>
-                  Developed a personal portfolio showcase projects, skills, and
-                  experience.
-                </li>
-                <li>
-                  Utilized Tailwind CSS and Bootstrap for a responsive, UI
-                  across all screen sizes.
-                </li>
-                <li>
-                  Integrated navigation and interactive sections to enhance user
-                  experience.
-                </li>
-                <div className="flex justify-center pt-3">
-                  <button className="btn btn-primary btn-lg">Veiw</button>
-                </div>
-              </div>
-            </div>
+         
           </div>
         </div>
       </section>
@@ -209,7 +193,15 @@ const Port = () => {
             <div className="col-12 col-md-3 mb-3 text-center">
               <h3 className=" inline-flex items-center gap-2">
                 Linkedin
-                <a href="" onClick={()=> window.open("https://www.linkedin.com/in/neeraj-pandey-9b49522b9/", "_blank")}>
+                <a
+                  href=""
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/neeraj-pandey-9b49522b9/",
+                      "_blank"
+                    )
+                  }
+                >
                   <img
                     src={linkedin}
                     alt="LinkedIn"
@@ -225,7 +217,12 @@ const Port = () => {
             <div className="col-12 col-md-3 mb-3 text-center">
               <h3 className="inline-flex items-center gap-2">
                 Github
-                <a href="" onClick={()=>window.open("https://github.com/neerajpandey45","_blank")}>
+                <a
+                  href=""
+                  onClick={() =>
+                    window.open("https://github.com/neerajpandey45", "_blank")
+                  }
+                >
                   <img
                     src={github}
                     alt="github"
