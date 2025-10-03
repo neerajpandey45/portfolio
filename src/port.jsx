@@ -98,15 +98,15 @@ const Port = () => {
         <div className="container mx-auto px-4 ">
           <h2>Education:</h2>
           <div className="flex flex-col lg:flex-row gap-6 py-3">
-            <div className=" flex-1 pl-5 border">
-              <h5>Graduation:</h5>
-              <span>Bachelor of Science(Bsc.)</span>
-              <p>K.N.I.P.S.S.Sultanpur Up.</p>
-            </div>
             <div className="flex-1 pl-5 border">
               <h5>Post Graduation:</h5>
               <span>Master of Computer Application(Mca)</span>
               <p>Galgotias University Greater Noida Up.</p>
+            </div>
+            <div className=" flex-1 pl-5 border">
+              <h5>Graduation:</h5>
+              <span>Bachelor of Science(Bsc.)</span>
+              <p>K.N.I.P.S.S.Sultanpur Up.</p>
             </div>
           </div>
         </div>
@@ -209,7 +209,13 @@ const Port = () => {
                 </ul>
 
                 <div className="flex justify-end mr-5 pt-1">
-                  <button className="btn btn-primary btn-sm">Veiw</button>
+                  <a
+                    href="https://np-job-portal.vercel.app" // your hosted job portal URL
+                    target="_blank" // open in new tab
+                    rel="noopener noreferrer" // security best practice
+                  >
+                    <button className="btn btn-primary btn-lg">Veiw</button>
+                  </a>
                 </div>
               </div>
               <h1>Portfolio</h1>
