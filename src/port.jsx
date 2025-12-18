@@ -16,6 +16,9 @@ import nextjs from "./assets/nextjs.jpeg";
 import bootstrap from "./assets/bootstrap.png";
 import tailwind from "./assets/tailwind.png";
 import python from "./assets/python.png";
+import csharp from "./assets/csharp.png";
+import jquery from "./assets/jQuery.png";
+import Sql from "./assets/Sq.png";
 const Port = () => {
   return (
     <div className={classes.main}>
@@ -51,15 +54,25 @@ const Port = () => {
           <div className="row align-items-center">
             <div className="col-12 col-md-6 d-flex justify-content-center mb-3 mb-md-0">
               <span className="h5 fw-semibold text-center">
-                <div className={classes.typing}>Hi I'm a web developer</div>
+                <div className={classes.typing}>Hi I'm a .NET Developer</div>
                 <div className="text-white font-extralight">
-                  <p>
+                  {/* <p>
                     Passionate Web Developer crafting responsive, user-friendly
                     websites.
-                  </p>
+                  </p> */}
                   <p>
+                    Passionate .NET Developer building secure, scalable, and
+                    data-driven web applications.
+                  </p>
+
+                  {/* <p>
                     Skilled in HTML, CSS, JavaScript, React, and modern web
                     technologies.
+                  </p> */}
+                  <p>
+                    Experienced with C#, ASP.NET MVC, .Net Core, SQL Server, and
+                    frontend technologies like React.js, Next.js, HTML, and
+                    modern CSS.
                   </p>
                 </div>
               </span>
@@ -83,13 +96,26 @@ const Port = () => {
         <div className="container mx-auto px-4">
           <h2 className="section-heading">About Me</h2>
           <div className="bg-gray-800 border">
-            <p className="text-white p-4" style={{ fontSize: "20px" }}>
+            {/* <p className="text-white p-4" style={{ fontSize: "20px" }}>
               Hi, I am Neeraj Pandey--a passionate Frontend Web Developer
               specializing in React.js, creating responsive and user-friendly
               interfaces. With strong skills in CSS frameworks like Bootstrap
               and Tailwind, I build clean, modern websites that adapt across all
               devices. I focus on performance, usability, and delivering
               seamless user experiences through efficient code.
+            </p> */}
+            <p className="text-white p-4" style={{ fontSize: "20px" }}>
+              Hi, I am Neeraj Pandey—a dedicated .NET Developer with hands-on
+              experience in C#, ASP.NET MVC, .Net Core ADO.NET, Entity
+              Framework, and SQL Server. I specialize in building secure,
+              scalable, and data-driven web applications with clean architecture
+              and efficient backend logic.
+              <br />
+              <br />
+              Along with backend development, I also have frontend experience in
+              React.js, Next.js, JavaScript, HTML, CSS, and modern CSS frameworks like
+              Bootstrap and Tailwind, enabling me to create responsive and
+              user-friendly interfaces.
             </p>
           </div>
         </div>
@@ -111,11 +137,82 @@ const Port = () => {
           </div>
         </div>
       </section>
+
       <section id="skills" className="py-2 bg-gray-800 text-white">
         <div className="container py-3">
           <h2 className="text-white">Skills:</h2>
           <div className={classes.card}>
-            <h4>Technical Skills:</h4>
+            <h4>.NET / Backend Skills</h4>
+            <div className="row text-center text-break">
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">C Sharp</p>
+                  <img src={csharp} />
+                </div>
+              </div>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Javascript</p>
+                  <img src={js} />
+                </div>
+              </div>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">jQuery</p>
+                  <img src={jquery} />
+                </div>
+              </div>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Sql</p>
+                  <img src={Sql} />
+                </div>
+              </div>
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Asp.Net</p>
+                </div>
+              </div>
+
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Asp.Net Mvc</p>
+                </div>
+              </div>
+
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">.Net Core</p>
+                </div>
+              </div>
+
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Ado.Net</p>
+                </div>
+              </div>
+
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Entity FrameWork</p>
+                </div>
+              </div>
+
+              <div className="col-6 col-sm-3 mb-3">
+                <div>
+                  <p className="text-2xl">Linq</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" className="py-2 bg-gray-800 text-white">
+        <div className="container py-3">
+          {/* <h2 className="text-white">Skills:</h2> */}
+          <div className={classes.card}>
+            <h4>Frontend Web Development</h4>
             <div className="row text-center text-break">
               <div className="col-6 col-sm-3 mb-3">
                 <div>
@@ -123,6 +220,7 @@ const Port = () => {
                   <img src={html} />
                 </div>
               </div>
+
               <div className="col-6 col-sm-3 mb-3">
                 <div>
                   <p className="text-2xl">Css</p>
@@ -135,6 +233,7 @@ const Port = () => {
                   <img src={js} />
                 </div>
               </div>
+
               <div className="col-6 col-sm-3 mb-3">
                 <div>
                   <p className="text-2xl">React.js</p>
@@ -157,13 +256,6 @@ const Port = () => {
                 <div>
                   <p className="text-2xl">Tailwind</p>
                   <img src={tailwind} />
-                </div>
-              </div>
-
-              <div className="col-6 col-sm-3 mb-3">
-                <div>
-                  <p className="text-2xl">Python</p>
-                  <img src={python} />
                 </div>
               </div>
             </div>
